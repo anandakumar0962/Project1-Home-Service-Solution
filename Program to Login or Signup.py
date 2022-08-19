@@ -41,7 +41,7 @@ class Signup(Login):
                 print(self.users_data)
                 
         else:
-            print("Ensure that the password and confirm password are same")
+            print("Password and Confirm password are different")
             
             
 def main():
