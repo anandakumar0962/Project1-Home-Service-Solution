@@ -1,13 +1,15 @@
-
+#datas of the users
 users_data = [{"user_name" : "Anandkumar", "mobile_number" : "9876543210",  "password" : "anand0962"},
                   {"user_name" : "Hariharan", "mobile_number" : "9876543201", "password" : "hari1302"}]
 
-
+#list of services based on the locations
 service_list = [ { "location" : "chennai", "services" : ["home clean", "plumber", "electrician", "carpenter", "pest control", "appliance repair", "painter"]},
                  { "location" : "thiruvallur", "services" : ["home clean", "plumber", "electrician", "painter"]},
                  { "location" : "porur", "services" : ["home clean", "plumber", "electrician", "carpenter", "painter"]},
                  { "location" : "tambaram", "services" : ["home clean", "plumber", "electrician", "appliance repair", "painter"]},
                  { "location" : "adyar", "services" : ["home clean", "plumber", "electrician", "carpenter", "appliance repair", "painter"]}]
+
+#created a class to signup for a newuser
 class Signup:
 
     def __init__(self, user_name, mobile_number, password):
@@ -31,7 +33,7 @@ class Signup:
             users_data.append(new_user)
             print(users_data)
 
-            
+#created a class for login            
 class Login:
 
     def __init__(self, mobile_number, password):
@@ -51,6 +53,7 @@ class Login:
         else:
             print("Email Id or Password is invalid")
     
+#created a class for selecting services    
 class Services:
 
     def __init__(self, user_name, mobile_number):
